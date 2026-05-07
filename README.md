@@ -27,15 +27,20 @@
 React + Node.js (Express) + Supabase で構築した、常駐型サーバーによる感情記録アプリです。
 
 ## 構成：
+```
 Web_Application_3/
-├── src/                # フロントエンド (React)
-│   ├── App.jsx         # メイン画面・UI
+├── src/
+│   ├── main.jsx        # Reactの起動エントリーポイント
+│   ├── App.jsx         # メイン画面・UIコンポーネント
 │   └── api.js          # フロントからバックエンドへのAPI通信
+├── index.html          # アプリケーションのベースとなるHTML
 ├── server.js           # バックエンド (Node.js/Express サーバー)
-├── supabase_schema.sql  # データベースのテーブル定義書 (SQL)
-├── package.json        # 依存ライブラリ・起動コマンド設定
+├── supabase_schema.sql # データベースのテーブル定義書 (SQL)
+├── package.json        # プロジェクト設定・依存ライブラリ一覧
+├── package-lock.json   # インストール済みパッケージのバージョン固定ファイル
 ├── vite.config.js      # Vite設定 (Proxy設定含む)
-└── .gitignore          # 秘密情報 (.env) を除外
+└── .gitignore          # 秘密情報 (.env) や node_modules の除外設定
+```
 
 ## セットアップ手順
 ### 1. データベース (Supabase) の準備
