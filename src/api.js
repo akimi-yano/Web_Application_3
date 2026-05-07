@@ -1,7 +1,7 @@
 // localならlocalhost、そうでなければ Render の URL を使うようにします
 const BASE_URL = window.location.hostname === 'localhost' 
   ? "http://localhost:3001/api" 
-  : "https://emotion-tracker.onrender.com/api";
+  : "https://emotion-tracker-eqhm.onrender.com/api";
 
 export async function getEmotions() {
   const res = await fetch(`${BASE_URL}/emotions`);

@@ -16,9 +16,9 @@
 
 ### 更なる改善案：LLMを統合して感情が動苦パターンを分析してまとめてくれる機能を実装したら面白そうだと思いました。
 
-### WebアプリケーションのURL： TODO
+### WebアプリケーションのURL： https://emotion-tracker-eqhm.onrender.com
 
-### GitHubのURL： TODO
+### GitHubのURL：　https://github.com/akimi-yano/Web_Application_3
 
 ---
 
@@ -74,7 +74,7 @@ PORT=3001
 
 #### 3. 設定画面で以下を入力：
 
-- Build Command: `npm install`
+- Build Command: `npm install; npm run build`
 
 - Start Command: `node server.js`
 
